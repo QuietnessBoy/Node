@@ -1,0 +1,3 @@
+cd ~
+
+systemctl enable/disable [/etc/init.d下service名称]
