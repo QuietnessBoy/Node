@@ -43,5 +43,3 @@ skip-grant-tables
 
 3. 修改 /usr/lib/systemd/system/mariadb.service
   ProtectHome=false
-
-4. 
