@@ -31,3 +31,15 @@ skip-grant-tables
 
  修改用户密码
  UPDATE user SET password=password('root') WHERE user='root';  
+
+
+
+
+## =========== 特别说明
+在需要指定数据文件位置时如若指定后，服务启动失败，看如下：
+1. 首先查看是否有权限
+
+2. 怀疑selinux的问题,需要setenforce 0
+
+3. 修改 /usr/lib/systemd/system/mariadb.service
+  ProtectHome=false
